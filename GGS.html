@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Here user can test their knowledge about what they know or what they read in the ITIHAAS">
+        <meta name="authors" content="Ankit Singh, Laxminarayan Prajapat, Mahendra Palawa, Shriom Dayal">
+        <meta name="keywords" content="ITIHAAS, HISTORY, BHARAT, INDIA, KING, MAHARAJ, TEST, QUIZ, GURU GOVIND SINGH JI "> 
+        <title>Awesome Quiz App</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="x-icon" href="logo.png">
+        <!-- FontAweome CDN Link for Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <style>
+            body{
+    background-image: url(GGS.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+        </style>
+    </head>
+    <body>
+        <!-- start Quiz button -->
+        <div class="start_btn"><button>Start Quiz</button></div>
+        <!-- Info Box -->
+        <div class="info_box">
+            <div class="info-title">
+                <span>Some Rules of this Quiz</span>
+            </div>
+                <div class="info-list">
+                    <div class="info">1. You will have only <span>10 seconds</span> per each question.</div>
+                    <div class="info">2. Once you select your answer, it can't be undone.</div>
+                    <div class="info">3. You can't select any option once time goes off.</div>
+                    <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+                    <div class="info">5. You'll get points on the basis of your correct answers.</div>
+                </div>
+                <div class="buttons">
+                    <button class="quit">Exit</button>
+                    <button class="restart">Go On</button>
+                </div>
+        </div>
+        <!-- Quiz Box -->
+        <div class="quiz_box">
+            <header>
+                <div class="title">Awesome Quiz Application</div>
+                <div class="timer">
+                    <div class="time_left_txt">Time Left</div>
+                    <div class="timer_sec">10</div>
+                </div>
+            </header>
+            <section>
+                <div class="que_text">
+                <!-- Here We've inserted question from JavaScript -->
+                </div>
+                <div class="option_list">
+                <!-- Here We've inserted options from JavaScript -->
+                </div>
+            </section>
+            <!-- footer of Quiz Box -->
+            <footer>
+                <div class="total_que">
+                <!-- Here We've inserted Question Count Number from JavaScript -->
+                </div>
+                <button class="next_btn">Submit</button>
+            </footer>
+        </div>
+        <!-- Result Box -->
+        <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete_text">You've completed the Quiz!</div>
+            <div class="score_text">
+                <!-- Here We've inserted Score Result from JavaScript -->
+            </div>
+            <div class="buttons">
+                <button class="restart">Replay Quiz</button>
+                <button class="quit">Quit Quiz</button>
+            </div>
+        </div>
+        <!-- Inside this JavaScript file We've inserted Questions and Options only -->
+        <script src="GGSquestions.js"></script>
+        <!-- Inside this JavaScript file We've coded all Quiz Codes -->
+        <script src="script.js"></script>
+    </body>
+</html>
